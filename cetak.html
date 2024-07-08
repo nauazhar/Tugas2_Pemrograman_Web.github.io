@@ -1,0 +1,32 @@
+<!-- cetak.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cetak Ticket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Cetak Ticket</h2>
+        <form id="cetakTicketForm">
+            <label for="inputEmail">Email:</label>
+            <input type="email" id="inputEmail" name="inputEmail" required>
+            <label for="inputNoTicket">Nomor Ticket:</label>
+            <input type="text" id="inputNoTicket" name="inputNoTicket" required>
+            <button type="submit">Cetak Ticket</button>
+        </form>
+        <div id="ticketResult" style="display: none;">
+            <h3>E-Ticket Anda</h3>
+            <div id="ticketInfo">
+                <p>Nomor Ticket: <strong id="nomorTicket"></strong></p>
+                <p>Nama Pemesan: <strong id="namaPemesan"></strong></p>
+                <p>Email: <strong id="emailPemesan"></strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-cetak.js"></script>
+</body>
+</html>

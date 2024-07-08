@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Event Konser Musik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Registrasi Event Konser Musik</h2>
+        <form id="registrationForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <label for="telp">No. Telp:</label>
+            <input type="tel" id="telp" name="telp" pattern="[0-9]{10,12}" required>
+            <label for="alamat">Alamat:</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea>
+            <label for="identitas">Jenis Identitas:</label>
+            <select id="identitas" name="identitas" required>
+                <option value="SIM">SIM</option>
+                <option value="KTP">KTP</option>
+                <option value="Passport">Passport</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

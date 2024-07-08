@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticket Event Konser Musik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>E-Ticket Anda</h2>
+        <div class="ticket">
+            <p>Nomor Ticket: <strong>PWEB-000000001</strong></p>
+            <p>Nama Pemesan: <strong id="namaPemesan"></strong></p>
+            <p>Email: <strong id="emailPemesan"></strong></p>
+        </div>
+    </div>
+
+    <script>
+        // Ambil data dari localStorage
+        const nama = localStorage.getItem('nama');
+        const email = localStorage.getItem('email');
+
+        // Masukkan data ke dalam elemen HTML
+        document.getElementById('namaPemesan').textContent = nama;
+        document.getElementById('emailPemesan').textContent = email;
+    </script>
+</body>
+</html>
